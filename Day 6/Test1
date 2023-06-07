@@ -19,13 +19,13 @@ public class TaskOne {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//*[@id=\"input-firstname\"]")).sendKeys("Kishore");
-		driver.findElement(By.xpath("//*[@id=\"input-lastname\"]")).sendKeys(" V");
-		driver.findElement(By.xpath("//*[@id=\"input-email\"]")).sendKeys("Kishore@gmail.com");
+		driver.findElement(By.xpath("//*[@id=\"input-firstname\"]")).sendKeys("Akash");
+		driver.findElement(By.xpath("//*[@id=\"input-lastname\"]")).sendKeys(" Sasikumar");
+		driver.findElement(By.xpath("//*[@id=\"input-email\"]")).sendKeys("aakash@gmail.com");
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)", "");
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"input-password\"]")).sendKeys("Kishore123");
+		driver.findElement(By.xpath("//*[@id=\"input-password\"]")).sendKeys("aakash123");
 		driver.findElement(By.xpath("//*[@id=\"input-newsletter-yes\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"form-register\"]/div/div/div/input")).click();
 		driver.findElement(By.xpath("//*[@id=\"form-register\"]/div/div/button")).click();
